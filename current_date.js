@@ -1,14 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const name = "Rithesh";
-const today= new Date();
+const fname = "Rithesh";
+const lname = "NK";
+const date = new Date();
 
 ReactDOM.render(
   <div>
-    <p> created by {name}</p>
-    <p> copyright {today.getFullYear()} </p>
+    <p>
+      created by {fname} {lname}
+    </p>
+    <p>
+      {" "}
+      copyright @ {date.getFullYear()} {date.getHours()}:{date.getMinutes()}:
+      {date.getSeconds()}
+    </p>
   </div>,
   document.getElementById("root")
 );
- 
